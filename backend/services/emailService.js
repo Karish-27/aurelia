@@ -1,4 +1,13 @@
 const nodemailer = require("nodemailer");
+const dns = require("dns");
+
+// Custom lookup that forces IPv4 resolution
+function dnsLookup(hostname, options, callback) {
+    dns.resolve4(hostname, (err, addresses) => {
+        if (err) return callback(err);
+        callback(null, addresses[0], 4);
+    });
+}
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -10,6 +19,7 @@ const transporter = nodemailer.createTransport({
     },
     connectionTimeout: 15000,
     socketTimeout: 15000,
+    dnsLookup,
 });
 
 /**
