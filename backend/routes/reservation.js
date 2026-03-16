@@ -30,13 +30,10 @@ router.post("/", async (req, res) => {
 
         await reservation.save();
 
-        // Send emails (don't block the response if email fails)
-        try {
-            await sendConfirmationEmail(reservation);
-            await sendStaffNotification(reservation);
-        } catch (emailErr) {
-            console.error("Email sending failed:", emailErr.message);
-        }
+        // Send emails in background (don't block the response)
+        sendConfirmationEmail(reservation)
+            .then(() => sendStaffNotification(reservation))
+            .catch((emailErr) => console.error("Email sending failed:", emailErr.message));
 
         res.status(201).json({
             message: "Reservation created successfully",
