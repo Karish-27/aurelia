@@ -1,23 +1,15 @@
 const nodemailer = require("nodemailer");
-const net = require("net");
-
-// Force IPv4 connections on Render (IPv6 is not supported)
-const originalConnect = net.Socket.prototype.connect;
-net.Socket.prototype.connect = function (options, ...args) {
-    if (typeof options === "object" && options.host) {
-        options.family = 4;
-    }
-    return originalConnect.call(this, options, ...args);
-};
 
 const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
     auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
     },
-    connectionTimeout: 10000,
-    socketTimeout: 10000,
+    connectionTimeout: 15000,
+    socketTimeout: 15000,
 });
 
 /**

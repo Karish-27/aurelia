@@ -1,3 +1,7 @@
+// Force all DNS lookups to prefer IPv4 (Render does not support IPv6 outbound)
+const dns = require("dns");
+dns.setDefaultResultOrder("ipv4first");
+
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
