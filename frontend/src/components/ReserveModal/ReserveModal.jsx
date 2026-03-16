@@ -62,7 +62,8 @@ const ReserveModal = () => {
         const data = Object.fromEntries(formData);
 
         try {
-            const res = await fetch("/api/reservations", {
+            const API_URL = import.meta.env.VITE_API_URL || "";
+            const res = await fetch(`${API_URL}/api/reservations`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
