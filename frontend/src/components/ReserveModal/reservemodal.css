@@ -1,0 +1,41 @@
+.reserve-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: 1px solid #2e2c29;
+    border-radius: 0.5rem;
+    color: #e8e4dc;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.reserve-input:focus {
+    border-color: #c9a96e;
+}
+
+.reserve-input::placeholder {
+    color: #5a5752;
+}
+
+.reserve-input option {
+    background: #0d0d0f;
+    color: #e8e4dc;
+}
+
+select.reserve-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239e9b93' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    cursor: pointer;
+}
+
+input[type="date"].reserve-input::-webkit-calendar-picker-indicator {
+    filter: invert(0.7);
+    cursor: pointer;
+}
+
+textarea.reserve-input {
+    min-height: 80px;
+}
