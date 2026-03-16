@@ -13,6 +13,7 @@ import Logo from "../components/Buttons/Logo";
 import Footer from "../components/Footer/Footer";
 import FooterTitle from "../components/Footer/FooterTitle";
 import ReserveModal from "../components/ReserveModal/ReserveModal";
+import EmailToast from "../components/Toast/EmailToast";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -34,6 +35,7 @@ const MainLayout = () => {
             <ReserveBtn />
             <Navbar />
             <ReserveModal />
+            <EmailToast />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>

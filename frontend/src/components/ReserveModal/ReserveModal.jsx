@@ -80,6 +80,19 @@ const ReserveModal = () => {
             setSuccess(result);
             setLoading(false);
             e.target.reset();
+
+            // Show Gmail-style toast notification after a short delay
+            setTimeout(() => {
+                window.dispatchEvent(
+                    new CustomEvent("show-email-toast", {
+                        detail: {
+                            sender: "Aurelia Resort & Spa",
+                            subject: `Reservation Confirmed — ${result.confirmationId}`,
+                            preview: `Thank you, ${result.reservation.name}. Your stay at ${result.reservation.room} has been confirmed. Our concierge team will reach out shortly.`,
+                        },
+                    })
+                );
+            }, 1500);
         } catch {
             setError("Unable to connect to the server. Please try again later.");
             setLoading(false);

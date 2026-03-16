@@ -1,0 +1,103 @@
+.email-toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+    width: 380px;
+    max-width: calc(100vw - 48px);
+    background: #202124;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.45),
+        0 2px 8px rgba(0, 0, 0, 0.25);
+    font-family: "Google Sans", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.email-toast__accent {
+    height: 3px;
+    background: linear-gradient(90deg, #4285f4, #34a853);
+}
+
+.email-toast__body {
+    padding: 14px 16px 16px;
+}
+
+.email-toast__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.email-toast__icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #c2185b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.email-toast__icon {
+    color: #fff;
+    font-size: 16px;
+}
+
+.email-toast__label {
+    color: #e8eaed;
+    font-size: 13px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.email-toast__time {
+    color: #9aa0a6;
+    font-size: 11px;
+}
+
+.email-toast__close {
+    background: none;
+    border: none;
+    color: #9aa0a6;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.email-toast__close:hover {
+    color: #e8eaed;
+}
+
+.email-toast__sender {
+    color: #e8eaed;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 2px;
+}
+
+.email-toast__subject {
+    color: #e8eaed;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.email-toast__preview {
+    color: #9aa0a6;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
