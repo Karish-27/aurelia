@@ -2,7 +2,7 @@ export const feedbackH1LG = [
     [
         "Aurelia redefined what we thought",
         "a holiday could feel like. Every",
-        "detail was curated with such care —",
+        "detail was curated with such care -",
         "from the scent in the lobby to the",
         "sunset views from our private terrace."
     ],

@@ -1,5 +1,5 @@
 import { FaBehance } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaDribbble } from "react-icons/fa";
 
@@ -15,10 +15,10 @@ const Footer = () => {
 
             <div className='flex justify-between items-center text-2xl mt-14'>
                 <h3 className='text-[#9e9b93]'>If you're seeking a retreat that<br />
-                    feels as extraordinary as it looks—<br />
+                    feels as extraordinary as it looks-<br />
                     we'd love to welcome you.<br /><br />
                     Reach our concierge at<br />
-                    <a href="mailto:reservations@aurelia.com" className='text-[#e8e4dc] hover:text-[#c9a96e] underline'>reservations@aurelia.com</a>
+                    <a href="mailto:karishmakumavat27@gmail.com.com" className='text-[#e8e4dc] hover:text-[#c9a96e] underline'>karishmakumavat27@gmail.com.com</a>
                 </h3>
 
                 <div className='flex flex-col justify-center items-end'>
@@ -33,15 +33,15 @@ const Footer = () => {
 
             <div className="w-full flex justify-between items-center mt-20">
                 <div className="flex justify-center items-center gap-1">
-                    <div className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><FaBehance className="text-xl" /></div>
-                    <div className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><FaInstagram className="text-xl" /></div>
-                    <div className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><CiLinkedin className="text-xl" /></div>
-                    <div className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><FaDribbble className="text-xl" /></div>
+                    <a href="https://www.behance.net/krutikp" target="_blank" rel="noopener noreferrer" className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><FaBehance className="text-xl" /></a>
+                    <a href="https://github.com/Karish-27" target="_blank" rel="noopener noreferrer" className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><FaGithub className="text-xl" /></a>
+                    <a href="https://www.linkedin.com/in/karishma-kumavat-480891241/" target="_blank" rel="noopener noreferrer" className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><CiLinkedin className="text-xl" /></a>
+                    <a href="https://dribbble.com/Krutik_Parmar" target="_blank" rel="noopener noreferrer" className='border-[1px] border-[#3a3835] rounded-full p-3 text-[#e8e4dc]'><FaDribbble className="text-xl" /></a>
                 </div>
 
                 <div>
                     <p className="text-[0.8rem] text-[#9e9b93] text-right">
-                        Aurelia — Boutique Resort<br />
+                        Aurelia - Boutique Resort<br />
                         & Spa. Ravello, Amalfi Coast.
                     </p>
                 </div>

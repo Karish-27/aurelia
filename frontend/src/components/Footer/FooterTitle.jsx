@@ -60,7 +60,7 @@ const FooterTitle = () => {
         <section ref={ftConRef} className='relative z-1 w-screen h-[40vh] border-1 border-t-[#3a3835]'>
             <div className='w-full flex justify-between items-center px-6 mt-8'>
                 <p className='text-[#9e9b93] text-[0.7rem]'>
-                    A resort by — <a href="mailto:reservations@aurelia.com" className='text-[#e8e4dc]'>Aurelia</a>
+                    Developed by - <a href="mailto:karishmakumavat27@gmail.com.com" className='text-[#e8e4dc]'>Karishma</a>
                 </p>
                 <p className='text-[#9e9b93] text-[0.7rem]'>
                     Built with <a href="#" className='text-[#e8e4dc]'>React & GSAP</a>

@@ -4,11 +4,14 @@ import { MdCheckCircle } from "react-icons/md";
 import gsap from "gsap";
 import "./reservemodal.css";
 
+const today = new Date().toISOString().split("T")[0];
+
 const ReserveModal = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(null);
     const [error, setError] = useState("");
+    const [checkinDate, setCheckinDate] = useState("");
     const overlayRef = useRef(null);
     const formRef = useRef(null);
 
@@ -87,7 +90,7 @@ const ReserveModal = () => {
                     new CustomEvent("show-email-toast", {
                         detail: {
                             sender: "Aurelia Resort & Spa",
-                            subject: `Reservation Confirmed — ${result.confirmationId}`,
+                            subject: `Reservation Confirmed - ${result.confirmationId}`,
                             preview: `Thank you, ${result.reservation.name}. Your stay at ${result.reservation.room} has been confirmed. Our concierge team will reach out shortly.`,
                         },
                     })
@@ -226,7 +229,9 @@ const ReserveModal = () => {
                                         type="date"
                                         name="checkin"
                                         required
+                                        min={today}
                                         className="reserve-input"
+                                        onChange={(e) => setCheckinDate(e.target.value)}
                                     />
                                 </div>
                                 <div className="reserve-field">
@@ -237,6 +242,7 @@ const ReserveModal = () => {
                                         type="date"
                                         name="checkout"
                                         required
+                                        min={checkinDate || today}
                                         className="reserve-input"
                                     />
                                 </div>
@@ -248,9 +254,9 @@ const ReserveModal = () => {
                                 </label>
                                 <select name="room" required defaultValue="" className="reserve-input">
                                     <option value="" disabled>Select a room</option>
-                                    <option value="The Aurelia Suite">The Aurelia Suite — 120 sqm coastal elegance</option>
-                                    <option value="The Cliffside Villa">The Cliffside Villa — secluded two-bedroom retreat</option>
-                                    <option value="The Penthouse">The Penthouse — full top floor, 360° views</option>
+                                    <option value="The Aurelia Suite">The Aurelia Suite - 120 sqm coastal elegance</option>
+                                    <option value="The Cliffside Villa">The Cliffside Villa - secluded two-bedroom retreat</option>
+                                    <option value="The Penthouse">The Penthouse - full top floor, 360° views</option>
                                 </select>
                             </div>
 
@@ -276,8 +282,8 @@ const ReserveModal = () => {
 
                             <p className="text-[#9e9b93] text-[0.65rem] text-center mt-2">
                                 Or contact us directly at{" "}
-                                <a href="mailto:reservations@aurelia.com" className="text-[#c9a96e] underline">
-                                    reservations@aurelia.com
+                                <a href="mailto:karishmakumavat27@gmail.com.com" className="text-[#c9a96e] underline">
+                                    karishmakumavat27@gmail.com.com
                                 </a>
                             </p>
                         </form>

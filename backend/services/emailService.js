@@ -56,7 +56,7 @@ const sendConfirmationEmail = async (reservation) => {
                         <tr>
                             <td style="padding:40px 40px 20px;text-align:center;border-bottom:1px solid #2e2c29;">
                                 <h1 style="margin:0;font-size:32px;color:#c9a96e;font-weight:300;letter-spacing:4px;">AURELIA</h1>
-                                <p style="margin:8px 0 0;font-size:11px;color:#9e9b93;letter-spacing:3px;text-transform:uppercase;">Boutique Resort & Spa — Ravello</p>
+                                <p style="margin:8px 0 0;font-size:11px;color:#9e9b93;letter-spacing:3px;text-transform:uppercase;">Boutique Resort & Spa - Ravello</p>
                             </td>
                         </tr>
 
@@ -120,10 +120,10 @@ const sendConfirmationEmail = async (reservation) => {
                             <td style="padding:30px 40px;border-top:1px solid #2e2c29;text-align:center;">
                                 <p style="margin:0 0 8px;font-size:12px;color:#9e9b93;">
                                     Questions? Contact us at
-                                    <a href="mailto:reservations@aurelia.com" style="color:#c9a96e;text-decoration:none;">reservations@aurelia.com</a>
+                                    <a href="mailto:karishmakumavat27@gmail.com.com" style="color:#c9a96e;text-decoration:none;">karishmakumavat27@gmail.com.com</a>
                                 </p>
                                 <p style="margin:0;font-size:11px;color:#5a5752;">
-                                    Aurelia — Boutique Resort & Spa. Ravello, Amalfi Coast, Italy.
+                                    Aurelia - Boutique Resort & Spa. Ravello, Amalfi Coast, Italy.
                                 </p>
                             </td>
                         </tr>
@@ -139,7 +139,7 @@ const sendConfirmationEmail = async (reservation) => {
     const mailOptions = {
         from: process.env.MAIL_FROM,
         to: reservation.email,
-        subject: `Reservation Confirmed — ${reservation.confirmationId} | Aurelia Resort`,
+        subject: `Reservation Confirmed - ${reservation.confirmationId} | Aurelia Resort`,
         html,
     };
 
@@ -167,7 +167,7 @@ Special Requests: ${reservation.requests || "None"}
     await transporter.sendMail({
         from: process.env.MAIL_FROM,
         to: process.env.SMTP_USER,
-        subject: `New Reservation — ${reservation.confirmationId} | ${reservation.name}`,
+        subject: `New Reservation - ${reservation.confirmationId} | ${reservation.name}`,
         text,
     });
 };

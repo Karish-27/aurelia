@@ -75,7 +75,7 @@ const StickyCols = () => {
                         <div className="col-content-wrapper">
                             <h1 className="text-2xl text-[#9e9b93] font-bold leading-auto">Crafted with
                                 <br />
-                                passion—
+                                passion-
                                 <br />
                                 served with
                                 <br />
@@ -111,7 +111,7 @@ const StickyCols = () => {
                     <div className="col-content-wrapper">
                         <h1 className="text-2xl font-bold leading-auto">Crafted with
                             <br />
-                            passion—
+                            passion-
                             <br />
                             served with
                             <br />
@@ -131,7 +131,7 @@ const StickyCols = () => {
                     <div className="col-content-wrapper-2">
                         <h1 className="text-2xl font-bold leading-auto">Crafted with
                             <br />
-                            passion—
+                            passion-
                             <br />
                             served with
                             <br />

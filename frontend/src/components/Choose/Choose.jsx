@@ -70,7 +70,7 @@ const Choose = () => {
             </div>
             <div className="choose-sec w-full flex lg:flex-row flex-col justify-center items-start gap-10 lg:mt-0">
                 <div className='lg:w-1/2 w-full text-[#9e9b93] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-16'>
-                    <p>We craft journeys for those who seek more than accommodation — they seek transformation. From cliffside dining to private yacht excursions, every experience is designed to leave an indelible impression on your soul.</p>
+                    <p>We craft journeys for those who seek more than accommodation - they seek transformation. From cliffside dining to private yacht excursions, every experience is designed to leave an indelible impression on your soul.</p>
                 </div>
                 <div className='lg:w-1/2 w-full'>
                     <div className=" lg:w-[30%] w-[60%]">

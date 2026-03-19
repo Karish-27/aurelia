@@ -62,8 +62,8 @@ const Hero = () => {
                 <div className="p-4 flex flex-col md:justify-center">
                     <div className="relative h-dvh">
                         <h1
-                            className="text-[#e8e4dc] text-start text-6xl md:text-9xl font-bold tracking-wider lg:absolute  lg:left-2"
-                            style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)', fontFamily: '"Cormorant Garamond", serif' }}
+                            className="text-[#FFFFFF] text-start text-6xl md:text-9xl font-bold tracking-wider lg:absolute  lg:left-2"
+                            style={{  fontFamily: '"Cormorant Garamond", serif' }}
                         >
                             Aurelia
                         </h1>
@@ -74,7 +74,7 @@ const Hero = () => {
                                 style={{ textShadow: '2px 2px 4px #000', fontFamily: '"Cormorant Garamond", serif' }}
                             >
                                 <span>Where luxury meets</span>
-                                <span>the horizon—</span>
+                                <span>the horizon-</span>
                                 <span>timeless escape</span>
                             </h2>
 

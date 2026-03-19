@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { MdEmail, MdClose } from "react-icons/md";
+import ChromeIcon from "../../assets/chrome.png";
+import GmailIcon from "../../assets/gmail.png";
 import gsap from "gsap";
 import "./emailtoast.css";
 
@@ -9,33 +10,28 @@ const EmailToast = () => {
     const timerRef = useRef(null);
 
     useEffect(() => {
-        const handleToast = (e) => {
-            setToast(e.detail);
-        };
-        window.addEventListener("show-email-toast", handleToast);
-        return () => window.removeEventListener("show-email-toast", handleToast);
+        const handleToast = (e) => setToast(e.detail);
+        globalThis.addEventListener("show-email-toast", handleToast);
+        return () => globalThis.removeEventListener("show-email-toast", handleToast);
     }, []);
 
     useEffect(() => {
         if (!toast || !toastRef.current) return;
 
-        // Slide in
         gsap.fromTo(
             toastRef.current,
-            { x: 400, opacity: 0 },
-            { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" }
+            { y: -80, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }
         );
 
-        // Auto-dismiss after 6s
         timerRef.current = setTimeout(() => dismiss(), 6000);
-
         return () => clearTimeout(timerRef.current);
     }, [toast]);
 
     const dismiss = () => {
         if (!toastRef.current) return;
         gsap.to(toastRef.current, {
-            x: 400,
+            y: -80,
             opacity: 0,
             duration: 0.35,
             ease: "power2.in",
@@ -46,31 +42,31 @@ const EmailToast = () => {
     if (!toast) return null;
 
     return (
-        <div ref={toastRef} className="email-toast">
-            {/* Gmail-style blue accent bar */}
-            <div className="email-toast__accent" />
+        <div ref={toastRef} className="gnotif">
+            {/* chevron top-right */}
+            <button className="gnotif__chevron" onClick={dismiss}>
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                    <path d="M1 1l4 4 4-4" stroke="#aaa" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+            </button>
 
-            <div className="email-toast__body">
-                {/* Header row */}
-                <div className="email-toast__header">
-                    <div className="email-toast__icon-wrap">
-                        <MdEmail className="email-toast__icon" />
-                    </div>
-                    <span className="email-toast__label">New email</span>
-                    <span className="email-toast__time">just now</span>
-                    <button onClick={dismiss} className="email-toast__close">
-                        <MdClose />
-                    </button>
+            <div className="gnotif__inner">
+                {/* Chrome icon */}
+                <div className="gnotif__chrome">
+                    <img src={ChromeIcon} alt="Chrome" className="gnotif__chrome-icon" />
                 </div>
 
-                {/* Sender */}
-                <p className="email-toast__sender">{toast.sender}</p>
+                {/* stacked text */}
+                <div className="gnotif__text">
+                    <p className="gnotif__sender">{toast.sender}</p>
+                    <p className="gnotif__domain">mail.google.com</p>
+                    <p className="gnotif__subject">{toast.subject}</p>
+                </div>
 
-                {/* Subject */}
-                <p className="email-toast__subject">{toast.subject}</p>
-
-                {/* Preview */}
-                <p className="email-toast__preview">{toast.preview}</p>
+                {/* Gmail icon */}
+                <div className="gnotif__gmail">
+                    <img src={GmailIcon} alt="Gmail" className="gnotif__gmail-icon" />
+                </div>
             </div>
         </div>
     );

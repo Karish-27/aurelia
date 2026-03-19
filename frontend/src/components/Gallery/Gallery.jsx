@@ -113,15 +113,15 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-background">
-                <img src={gbg1} alt="The Aurelia Suite — luxury hotel room" />
+                <img src={gbg1} alt="The Aurelia Suite - luxury hotel room" />
                 <div className="gallery-topText">
                     <h4>The Suite</h4>
-                    <h3>(Scroll)</h3>
+                    {/* <h3>(Scroll)</h3> */}
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#c9a96e]' />
-                        <h3>The Aurelia Suite — 120 sqm of refined coastal elegance with a private <br /> terrace, plunge pool, and panoramic views of the Mediterranean.</h3>
+                        <h3>The Aurelia Suite - 120 sqm of refined coastal elegance with a private <br /> terrace, plunge pool, and panoramic views of the Mediterranean.</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#2e2c29]">
                         <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[33%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -130,15 +130,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-second" className="gallery-background2">
-                <img src={gbg2} alt="The Cliffside Villa — private luxury retreat" />
+                <img src={gbg2} alt="The Cliffside Villa - private luxury retreat" />
                 <div className="gallery-topText">
                     <h4>The Villa</h4>
-                    <h3>(Scroll)</h3>
+                    {/* <h3>(Scroll)</h3> */}
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#c9a96e]' />
-                        <h3>The Cliffside Villa — a secluded two-bedroom retreat perched above the <br /> sea, with a private chef kitchen and infinity pool carved into the rock.</h3>
+                        <h3>The Cliffside Villa - a secluded two-bedroom retreat perched above the <br /> sea, with a private chef kitchen and infinity pool carved into the rock.</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#2e2c29]">
                         <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[67%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -147,15 +147,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-third" className="gallery-background2">
-                <img src={gbg3} alt="The Penthouse — rooftop luxury accommodation" />
+                <img src={gbg3} alt="The Penthouse - rooftop luxury accommodation" />
                 <div className="gallery-topText">
                     <h4>The Penthouse</h4>
-                    <h3>(Scroll)</h3>
+                    {/* <h3>(Scroll)</h3> */}
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#c9a96e]' />
-                        <h3>The Penthouse — our crown jewel spanning the entire top floor, featuring <br /> a rooftop garden, outdoor dining, and 360-degree views of the coastline.</h3>
+                        <h3>The Penthouse - our crown jewel spanning the entire top floor, featuring <br /> a rooftop garden, outdoor dining, and 360-degree views of the coastline.</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#2e2c29]">
                         <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[100%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>

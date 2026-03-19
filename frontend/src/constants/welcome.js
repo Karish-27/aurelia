@@ -1,5 +1,5 @@
 export const welcomeLinesLG = [
-    "Welcome to Aurelia — a sanctuary",
+    "Welcome to Aurelia - a sanctuary",
     "where timeless elegance meets",
     "modern luxury, nestled along",
     "the Amalfi coastline,",
@@ -8,7 +8,7 @@ export const welcomeLinesLG = [
 ];
 export const welcomeLinesSM = [
     "Welcome to",
-    "Aurelia — a",
+    "Aurelia - a",
     "sanctuary where",
     "timeless elegance",
     "meets modern luxury,",

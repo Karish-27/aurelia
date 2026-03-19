@@ -48,7 +48,7 @@ const Showcase = () => {
                 ref={imgConRef}
                 className="absolute top-0 left-0 h-full flex items-center justify-start gap-2 p-2 overflow-hidden"
             >
-                {/* Experience 1 — Wellness */}
+                {/* Experience 1 - Wellness */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#e8e4dc]">
                         <h1 className="text-3xl font-bold">Serenità<br />Wellness Retreat</h1>
@@ -56,7 +56,7 @@ const Showcase = () => {
                     </div>
                     <img
                         src={acImg1}
-                        alt="Serenità wellness spa — luxury treatment room"
+                        alt="Serenità wellness spa - luxury treatment room"
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
@@ -68,7 +68,7 @@ const Showcase = () => {
                     </div>
                 </div>
 
-                {/* Experience 2 — Dining */}
+                {/* Experience 2 - Dining */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#e8e4dc]">
                         <h1 className="text-3xl font-bold">Oro<br />Cliffside Dining</h1>
@@ -76,7 +76,7 @@ const Showcase = () => {
                     </div>
                     <img
                         src={acImg2}
-                        alt="Oro cliffside dining — luxury restaurant terrace"
+                        alt="Oro cliffside dining - luxury restaurant terrace"
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
@@ -88,7 +88,7 @@ const Showcase = () => {
                     </div>
                 </div>
 
-                {/* Experience 3 — Voyage */}
+                {/* Experience 3 - Voyage */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#e8e4dc]">
                         <h1 className="text-3xl font-bold">Vela<br />Private Voyages</h1>

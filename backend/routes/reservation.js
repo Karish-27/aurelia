@@ -3,7 +3,7 @@ const router = express.Router();
 const Reservation = require("../models/Reservation");
 const { sendConfirmationEmail, sendStaffNotification } = require("../services/emailService");
 
-// POST /api/reservations — create a new reservation
+// POST /api/reservations - create a new reservation
 router.post("/", async (req, res) => {
     try {
         const { name, email, phone, guests, checkin, checkout, room, requests } = req.body;
@@ -60,7 +60,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-// GET /api/reservations/:confirmationId — look up a reservation
+// GET /api/reservations/:confirmationId - look up a reservation
 router.get("/:confirmationId", async (req, res) => {
     try {
         const reservation = await Reservation.findOne({

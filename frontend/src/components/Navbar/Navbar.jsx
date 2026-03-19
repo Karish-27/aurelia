@@ -101,7 +101,7 @@ const Navbar = () => {
           ))}
         </nav>
         <p className="absolute bottom-10 text-[#9e9b93] text-[0.7rem]">
-          Aurelia — Boutique Resort & Spa. Ravello, Amalfi Coast.
+          Aurelia - Boutique Resort & Spa. Ravello, Amalfi Coast.
         </p>
       </div>
 
