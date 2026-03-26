@@ -84,23 +84,23 @@ const Navbar = () => {
       {/* Menu Overlay */}
       <div
         ref={overlayRef}
-        className="fixed inset-0 z-50 bg-[#0d0d0f] flex-col justify-center items-center hidden"
+        className="fixed inset-0 z-50 bg-[#0d0d0f] flex-col justify-center items-center hidden overflow-y-auto"
         style={{ clipPath: "inset(0% 0% 100% 0%)" }}
       >
-        <nav className="flex flex-col items-center gap-3">
+        <nav className="flex flex-col items-center gap-1 sm:gap-2 md:gap-3 py-14 sm:py-10">
           {menuLinks.map((link, i) => (
             <button
               key={link.name}
               ref={(el) => (linksRef.current[i] = el)}
               onClick={() => handleLinkClick(link.target)}
-              className="text-[#e8e4dc] text-5xl md:text-7xl font-bold tracking-tight hover:text-[#c9a96e] transition-colors duration-300 cursor-pointer"
+              className="text-[#e8e4dc] text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight hover:text-[#c9a96e] transition-colors duration-300 cursor-pointer"
               style={{ fontFamily: '"Cormorant Garamond", serif' }}
             >
               {link.name}
             </button>
           ))}
         </nav>
-        <p className="absolute bottom-10 text-[#9e9b93] text-[0.7rem]">
+        <p className="sticky bottom-0 w-full text-center pb-4 text-[#9e9b93] text-[0.7rem] bg-[#0d0d0f]">
           Aurelia - Boutique Resort & Spa. Ravello, Amalfi Coast.
         </p>
       </div>
