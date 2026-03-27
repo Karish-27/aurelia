@@ -58,7 +58,7 @@ const Choose = () => {
 
     return (
         <section id="experiences" className="choose-section w-full h-dvh p-8 pt-10">
-            <p className='text-[.7rem] text-[#e8e4dc] choose-subtitle'>What awaits you</p>
+            <p className='text-[.7rem] text-[#e8e4dc] choose-subtitle'>What defines us</p>
             <div className="lg:mt-10 mt-7 title-part origin-bottom ">
                 {
                     chooseLines.map((line, index) => (
@@ -70,30 +70,30 @@ const Choose = () => {
             </div>
             <div className="choose-sec w-full flex lg:flex-row flex-col justify-center items-start gap-10 lg:mt-0">
                 <div className='lg:w-1/2 w-full text-[#9e9b93] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-16'>
-                    <p>We craft journeys for those who seek more than accommodation - they seek transformation. From cliffside dining to private yacht excursions, every experience is designed to leave an indelible impression on your soul.</p>
+                    <p>We build structures for those who seek more than shelter - they seek resilience. From polar outposts to remote highland stations, every module is designed to leave an enduring presence on the terrain.</p>
                 </div>
                 <div className='lg:w-1/2 w-full'>
                     <div className=" lg:w-[30%] w-[60%]">
-                        <p className="text-[.7rem] text-[#e8e4dc]">Every stay is built around our signature pillars:</p>
+                        <p className="text-[.7rem] text-[#e8e4dc]">Every unit is built around our signature systems:</p>
                     </div>
                     <div className="flex flex-1 flex-wrap justify-start items-start gap-2 mt-8">
                         <div className="border-[1px] border-[#9e9b93] text-[#9e9b93] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Private Dining
+                            Climate Shielding
                         </div>
                         <div className="border-[1px] border-[#e8e4dc] text-[#e8e4dc] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Wellness Spa
+                            Modular Design
                         </div>
                         <div className="border-[1px] border-[#9e9b93] text-[#9e9b93] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Yacht Excursions
+                            Polar Deployment
                         </div>
                         <div className="border-[1px] border-[#e8e4dc] text-[#e8e4dc] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Wine Cellar
+                            Zero Foundation
                         </div>
                         <div className="border-[1px] border-[#9e9b93] text-[#9e9b93] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Cultural Tours
+                            Terrain Adaptability
                         </div>
                         <div className="border-[1px] border-[#e8e4dc] text-[#e8e4dc] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Concierge
+                            Durability
                         </div>
                     </div>
                 </div>

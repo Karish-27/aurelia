@@ -1,31 +1,31 @@
 export const welcomeLinesLG = [
-    "Welcome to Aurelia - a sanctuary",
-    "where timeless elegance meets",
-    "modern luxury, nestled along",
-    "the Amalfi coastline,",
-    "curated for the world's most",
-    "discerning travelers.",
+    "Welcome to Aurelia - a dwelling",
+    "where adaptive resilience meets",
+    "extreme terrain, rising through",
+    "the remotest outposts,",
+    "crafted for the world's most",
+    "demanding climates.",
 ];
 export const welcomeLinesSM = [
     "Welcome to",
     "Aurelia - a",
-    "sanctuary where",
-    "timeless elegance",
-    "meets modern luxury,",
-    "nestled along the",
-    "Amalfi coastline,",
-    "curated for the",
+    "dwelling where",
+    "adaptive resilience",
+    "meets extreme terrain,",
+    "rising through the",
+    "remotest outposts,",
+    "crafted for the",
     "world's most",
-    "discerning",
-    "travelers.",
+    "demanding",
+    "climates.",
 ];
 
 export const chooseLinesLG = [
-    "Experiences &",
-    "Indulgences"
+    "Deployments &",
+    "Configurations"
 ];
 export const chooseLinesSM = [
-    "Experiences",
-    "& Indul-",
-    "gences"
+    "Deployments",
+    "& Config-",
+    "urations"
 ];

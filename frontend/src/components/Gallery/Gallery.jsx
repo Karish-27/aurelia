@@ -3,10 +3,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './gallery.css';
 import { BsFillPlusCircleFill } from "react-icons/bs";
-
-const gbg1 = "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1920&q=80";
-const gbg2 = "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1920&q=80";
-const gbg3 = "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1920&q=80";
+import gbg1 from "../../assets/heromain.png";
+import gbg2 from "../../assets/rooms1.png";
+import gbg3 from "../../assets/rooms2.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,7 +93,7 @@ const Gallery = () => {
         for (let i = 1; i <= quantity; i++) {
             items.push(
                 <h3 key={i} style={{ "--index": i }} className='tracking-tighter'>
-                    Our Rooms
+                    Our Modules
                 </h3>
             );
         }
@@ -113,15 +112,15 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-background">
-                <img src={gbg1} alt="The Aurelia Suite - luxury hotel room" />
+                <img src={gbg1} alt="The Aurelia Core - polar module interior" />
                 <div className="gallery-topText">
-                    <h4>The Suite</h4>
+                    <h4>The Module</h4>
                     {/* <h3>(Scroll)</h3> */}
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#c9a96e]' />
-                        <h3>The Aurelia Suite - 120 sqm of refined coastal elegance with a private <br /> terrace, plunge pool, and panoramic views of the Mediterranean.</h3>
+                        <h3>The Aurelia Core - 38 sqm of engineered polar resilience with a sealed <br /> shell, passive heating, and panoramic views of the surrounding tundra.</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#2e2c29]">
                         <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[33%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -130,15 +129,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-second" className="gallery-background2">
-                <img src={gbg2} alt="The Cliffside Villa - private luxury retreat" />
+                <img src={gbg2} alt="The Aurelia Cluster - twin-unit forest system" />
                 <div className="gallery-topText">
-                    <h4>The Villa</h4>
+                    <h4>The Habitat</h4>
                     {/* <h3>(Scroll)</h3> */}
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#c9a96e]' />
-                        <h3>The Cliffside Villa - a secluded two-bedroom retreat perched above the <br /> sea, with a private chef kitchen and infinity pool carved into the rock.</h3>
+                        <h3>The Aurelia Cluster - a connected twin-module system anchored within the <br /> forest, with a modular cook station and viewing deck built into the slope.</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#2e2c29]">
                         <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[67%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -147,15 +146,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-third" className="gallery-background2">
-                <img src={gbg3} alt="The Penthouse - rooftop luxury accommodation" />
+                <img src={gbg3} alt="The Aurelia Summit - elevated ridge platform" />
                 <div className="gallery-topText">
-                    <h4>The Penthouse</h4>
+                    <h4>The Summit</h4>
                     {/* <h3>(Scroll)</h3> */}
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#c9a96e]' />
-                        <h3>The Penthouse - our crown jewel spanning the entire top floor, featuring <br /> a rooftop garden, outdoor dining, and 360-degree views of the coastline.</h3>
+                        <h3>The Aurelia Summit - our crown unit spanning the entire ridge, featuring <br /> a rooftop platform, open-air station, and 360-degree views of the mountain.</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#2e2c29]">
                         <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[100%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>

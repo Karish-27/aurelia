@@ -26,7 +26,7 @@ const Feedback = () => {
         <section id="guests" className='w-sereen h-dvh p-8 flex flex-col justify-center items-center'>
             <div className='w-full text-left'>
                 <p className='text-[.7rem] font-bold text-[#e8e4dc] activities-subtitle text-left'>
-                    Guest voices
+                    Field voices
                 </p>
 
                 <div>

@@ -71,7 +71,7 @@ const FooterTitle = () => {
             </div>
 
             <div className='footer-title w-full text-center'>
-                <h1 className='text-[18vw] font-bold' style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+                <h1 className='text-[18vw] font-bold'>
                     Aurelia
                 </h1>
             </div>

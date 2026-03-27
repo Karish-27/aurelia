@@ -33,7 +33,7 @@ const reservationSchema = new mongoose.Schema(
         room: {
             type: String,
             required: [true, "Room preference is required"],
-            enum: ["The Aurelia Suite", "The Cliffside Villa", "The Penthouse"],
+            enum: ["The Aurelia Core", "The Aurelia Cluster", "The Aurelia Summit"],
         },
         requests: {
             type: String,
