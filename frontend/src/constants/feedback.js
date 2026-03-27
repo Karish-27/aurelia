@@ -1,43 +1,43 @@
 export const feedbackH1LG = [
     [
         "Aurelia redefined what we thought",
-        "a holiday could feel like. Every",
-        "detail was curated with such care -",
-        "from the scent in the lobby to the",
-        "sunset views from our private terrace."
+        "a shelter could feel like. Every",
+        "module was designed with such care -",
+        "from the seal in the module to the",
+        "mountain views from our remote outpost."
     ],
     [
-        "We celebrated our anniversary at",
+        "We tested our system under",
         "Aurelia and it surpassed every",
-        "expectation. The private dining on",
-        "the cliffside was a moment we will",
+        "expectation. The modular shell on",
+        "the permafrost was a terrain we will",
         "carry with us for a lifetime."
     ],
     [
-        "The spa alone was worth the journey.",
-        "But it's the staff who made Aurelia",
-        "unforgettable. They anticipated our",
-        "every need before we even knew",
+        "The form alone was worth the trial.",
+        "But it's the build that made Aurelia",
+        "unforgettable. It withstood our",
+        "every test before we even knew",
         "we had one."
     ]
 ];
 
 export const feedbackReviewLG = [
     [
-        "Isabella Laurent",
-        "Guest, The Aurelia Suite",
+        "Henrik Larsson",
+        "Field Test, Polar Module",
         "review1",
         "33%"
     ],
     [
-        "James & Victoria Chen",
-        "Anniversary Celebration",
+        "Priya & Rajan Mehta",
+        "Deployment Evaluation",
         "review2",
         "66%"
     ],
     [
-        "Amara Okonkwo",
-        "Wellness Retreat Guest",
+        "Leila Traoré",
+        "Terrain Assessment Lead",
         "review3",
         "100%"
     ]

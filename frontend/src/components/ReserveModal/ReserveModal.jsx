@@ -89,9 +89,9 @@ const ReserveModal = () => {
                 window.dispatchEvent(
                     new CustomEvent("show-email-toast", {
                         detail: {
-                            sender: "Aurelia Resort & Spa",
-                            subject: `Reservation Confirmed - ${result.confirmationId}`,
-                            preview: `Thank you, ${result.reservation.name}. Your stay at ${result.reservation.room} has been confirmed. Our concierge team will reach out shortly.`,
+                            sender: "Aurelia Modular Systems",
+                            subject: `Inquiry Confirmed - ${result.confirmationId}`,
+                            preview: `Thank you, ${result.reservation.name}. Your unit at ${result.reservation.room} has been confirmed. Our deployment team will reach out shortly.`,
                         },
                     })
                 );
@@ -125,11 +125,11 @@ const ReserveModal = () => {
                             className="text-[#e8e4dc] text-3xl md:text-5xl font-bold mb-4"
                             style={{ fontFamily: '"Cormorant Garamond", serif' }}
                         >
-                            Reservation Confirmed
+                            Inquiry Confirmed
                         </h1>
                         <p className="text-[#9e9b93] text-sm mb-8 max-w-md">
                             A confirmation email has been sent to <span className="text-[#e8e4dc]">{success.reservation.email}</span>.
-                            Our concierge team will reach out with personalized details for your stay.
+                            Our deployment team will reach out with personalized details for your unit.
                         </p>
                         <div className="bg-[#1a1a1f] rounded-2xl px-8 py-6 mb-8">
                             <p className="text-[0.65rem] text-[#9e9b93] uppercase tracking-widest mb-2">Confirmation ID</p>
@@ -146,16 +146,16 @@ const ReserveModal = () => {
                     <>
                         {/* Form Header */}
                         <p className="text-[.7rem] font-bold text-[#9e9b93] tracking-widest uppercase mb-4">
-                            Reservation Request
+                            Deployment Request
                         </p>
                         <h1
                             className="text-[#e8e4dc] text-4xl md:text-6xl font-bold mb-2"
                             style={{ fontFamily: '"Cormorant Garamond", serif' }}
                         >
-                            Reserve Your Stay
+                            Reserve Your Unit
                         </h1>
                         <p className="text-[#9e9b93] text-sm mb-10">
-                            Complete the form below and our concierge team will confirm your reservation within 24 hours.
+                            Complete the form below and our deployment team will confirm your inquiry within 24 hours.
                         </p>
 
                         {/* Error Message */}
@@ -250,13 +250,13 @@ const ReserveModal = () => {
 
                             <div className="reserve-field">
                                 <label className="text-[#9e9b93] text-[0.7rem] uppercase tracking-widest mb-2 block">
-                                    Room Preference *
+                                    Module Preference *
                                 </label>
                                 <select name="room" required defaultValue="" className="reserve-input">
-                                    <option value="" disabled>Select a room</option>
-                                    <option value="The Aurelia Suite">The Aurelia Suite - 120 sqm coastal elegance</option>
-                                    <option value="The Cliffside Villa">The Cliffside Villa - secluded two-bedroom retreat</option>
-                                    <option value="The Penthouse">The Penthouse - full top floor, 360° views</option>
+                                    <option value="" disabled>Select a module</option>
+                                    <option value="The Aurelia Core">The Aurelia Core - polar-grade sealed habitat unit</option>
+                                    <option value="The Aurelia Cluster">The Aurelia Cluster - twin-module forest-grade system</option>
+                                    <option value="The Aurelia Summit">The Aurelia Summit - full ridge span, 360° terrain</option>
                                 </select>
                             </div>
 
@@ -267,7 +267,7 @@ const ReserveModal = () => {
                                 <textarea
                                     name="requests"
                                     rows="3"
-                                    placeholder="Dietary needs, celebrations, spa preferences..."
+                                    placeholder="Terrain type, duration, configuration preferences..."
                                     className="reserve-input resize-none"
                                 />
                             </div>

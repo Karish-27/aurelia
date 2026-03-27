@@ -6,14 +6,14 @@ import { ScrollSmoother } from "gsap/all";
 
 const menuLinks = [
   { name: "Home", target: "#hero" },
-  { name: "Rooms", target: "#rooms" },
-  { name: "Experiences", target: "#experiences" },
-  { name: "Dining", target: "#dining" },
-  { name: "Wellness", target: "#wellness" },
+  { name: "Modules", target: "#rooms" },
+  { name: "Deployments", target: "#experiences" },
+  { name: "Terrain", target: "#dining" },
+  { name: "Systems", target: "#wellness" },
   { name: "Gallery", target: "#gallery" },
-  { name: "Guest Voices", target: "#guests" },
+  { name: "Field Notes", target: "#guests" },
   { name: "Location", target: "#location" },
-  { name: "Reserve", target: "reserve-modal" },
+  { name: "Inquire", target: "reserve-modal" },
 ];
 
 const Navbar = () => {
@@ -101,7 +101,7 @@ const Navbar = () => {
           ))}
         </nav>
         <p className="sticky bottom-0 w-full text-center pb-4 text-[#9e9b93] text-[0.7rem] bg-[#0d0d0f]">
-          Aurelia - Boutique Resort & Spa. Ravello, Amalfi Coast.
+          Aurelia - Modular Living Systems. Built for extreme terrain.
         </p>
       </div>
 

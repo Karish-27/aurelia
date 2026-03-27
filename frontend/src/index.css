@@ -18,10 +18,6 @@ body {
 	-ms-overflow-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Cormorant Garamond", serif;
-}
-
 /* Glassmorphism card effect */
 .glassEffect {
 	-webkit-backdrop-filter: blur(5px) saturate(100%);

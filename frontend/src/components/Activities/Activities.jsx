@@ -75,7 +75,7 @@ const Activities = () => {
 
     return (
         <section id="wellness" className="activities-section w-full h-[120vh] p-8 mt-16">
-            <p className='text-[.7rem] font-bold text-[#e8e4dc] activities-subtitle'>Crafted for every sense</p>
+            <p className='text-[.7rem] font-bold text-[#e8e4dc] activities-subtitle'>Engineered for every climate</p>
             <div className="lg:mt-10 mt-7 activities-part origin-bottom">
                 {activitiesLines.map((line, index) => (
                     <h1 key={index} className={`activities-heading text-[#e8e4dc] lg:text-[9.5rem] text-[3rem] leading-[0.9]`} font-medium tracking-tighter>
@@ -91,13 +91,13 @@ const Activities = () => {
             <div className="activities-sec w-full flex lg:flex-row flex-col justify-center items-start gap-10 lg:mt-0">
                 <div className='lg:w-1/2 w-full'>
                     <div className="lg:w-[30%] w-[60%]">
-                        <p className="text-[.7rem] text-[#e8e4dc] text-nowrap">Our hospitality spans every layer of the guest experience:</p>
+                        <p className="text-[.7rem] text-[#e8e4dc] text-nowrap">Our engineering spans every layer of the module's construction:</p>
                     </div>
                     <div className="flex flex-col justify-start items-start gap-5 mt-8 mr-14">
                         <div className="w-full mr-14">
                             <div className="flex justify-between w-full mb-4">
-                                <h1 className="text-[#9e9b93] text-xl">Spa & Wellness</h1>
-                                <p className="text-[#9e9b93] text-[0.7rem]">Massages, Thermal Baths, Yoga</p>
+                                <h1 className="text-[#9e9b93] text-xl">Cold & Endurance</h1>
+                                <p className="text-[#9e9b93] text-[0.7rem]">Insulation, Thermal Shells, Anchoring</p>
                             </div>
                             <div className="relative z-9 w-full h-[0.1rem] bg-[#2e2c29]">
                                 <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[90%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -105,8 +105,8 @@ const Activities = () => {
                         </div>
                         <div className="w-full mr-14">
                             <div className="flex justify-between w-full mb-4">
-                                <h1 className="text-[#9e9b93] text-xl">Culinary Arts</h1>
-                                <p className="text-[#9e9b93] text-[0.7rem]">Fine Dining, Wine Pairing, Private Chef</p>
+                                <h1 className="text-[#9e9b93] text-xl">Modular Systems</h1>
+                                <p className="text-[#9e9b93] text-[0.7rem]">Stackable Units, Grid Power, Water Cycling</p>
                             </div>
                             <div className="relative z-9 w-full h-[0.1rem] bg-[#2e2c29]">
                                 <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[70%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -114,8 +114,8 @@ const Activities = () => {
                         </div>
                         <div className="w-full mr-14">
                             <div className="flex justify-between w-full mb-4">
-                                <h1 className="text-[#9e9b93] text-xl">Adventures</h1>
-                                <p className="text-[#9e9b93] text-[0.7rem]">Yacht Tours, Hiking, Cultural Excursions</p>
+                                <h1 className="text-[#9e9b93] text-xl">Deployments</h1>
+                                <p className="text-[#9e9b93] text-[0.7rem]">Polar Zones, Deserts, Mountain Ranges</p>
                             </div>
                             <div className="relative z-9 w-full h-[0.1rem] bg-[#2e2c29]">
                                 <div className="progress-line absolute z-10 bg-[#e8e4dc] w-[55%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -124,7 +124,7 @@ const Activities = () => {
                     </div>
                 </div>
                 <div className='lg:w-1/2 w-full text-[#9e9b93] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-0'>
-                    <p>Our offerings span the full spectrum of luxury hospitality - from award-winning spa treatments and Michelin-inspired cuisine, to private coastal adventures. Every detail is crafted with the same level of care and obsessive attention to perfection.</p>
+                    <p>Our modules span the full spectrum of extreme terrain deployments - from polar shelters and desert-rated units, to remote highland stations. Every panel is engineered with the same level of care and obsessive attention to perfection.</p>
                 </div>
             </div>
         </section>

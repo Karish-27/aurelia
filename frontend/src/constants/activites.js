@@ -1,4 +1,4 @@
 export const activitiesLinesLG = [
-    "World-class",
-    "amenities"
+    "All-terrain",
+    "engineering"
 ]

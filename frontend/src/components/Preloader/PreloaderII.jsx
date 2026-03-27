@@ -134,8 +134,8 @@ export default function PreloaderII() {
             <div className="preloader-content">
                 <div className="preloader-footer">
                     <p className="text-sm">
-                        A luxury retreat on<br />
-                        the Amalfi Coast.
+                        A modular system built<br />
+                        for extreme terrain.
                     </p>
                 </div>
             </div>

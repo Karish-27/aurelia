@@ -76,7 +76,7 @@ const MarqueeText = () => {
 
     const marqueeItems = Array(6).fill(null).map((_, index) => (
         <div key={index} className="marquee-text-marquee">
-            <h1>Where every moment is golden<span className='star-rotate'>*</span></h1>
+            <h1>Where every frontier finds shelter<span className='star-rotate'>*</span></h1>
         </div>
     ));
 

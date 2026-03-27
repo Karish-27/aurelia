@@ -31,9 +31,9 @@ const MarqueeSticky = () => {
             <div className="pin-con relative">
                 <div className="pl-8">
                     <p className="text-[0.7rem] text-[#e8e4dc] choose-subtitle">
-                        Discover our philosophy and
+                        Discover our engineering and
                         <br />
-                        the art behind every detail.
+                        the craft behind every module.
                     </p>
                 </div>
 
